@@ -4,6 +4,7 @@ import './App.css';
 import contacts from "./contacts.json"
 import Contact from './components/Contacts';
 
+
 class App extends Component {
   state = {
     listOfContacts: contacts.slice(0, 5)
@@ -60,7 +61,7 @@ class App extends Component {
 
           {
             this.state.listOfContacts.map(contact=> {
-              return <Contact picture={contact.pictureUrl} name={contact.name} popularity={contact.popularity}/>
+              return <Contact picture={contact.pictureUrl} name={contact.name} popularity={contact.popularity} key={contact.id} action={this.removeRow}/>
             })
           } 
         </table>
