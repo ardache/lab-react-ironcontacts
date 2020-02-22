@@ -2,6 +2,7 @@ import React from 'react';
 
 const Contact = props => {
     return (
+<<<<<<< Updated upstream
         <div className = "table">
            
                    
@@ -11,6 +12,14 @@ const Contact = props => {
                             <td>       {props.popularity}                  </td>
                         </tr>
         </div>
+=======
+        
+            <tr>
+                <td><img alt="" height="100px" src={props.picture} /> </td>
+                <td>{props.name} </td>
+                <td>{props.popularity}</td>
+            </tr>
+>>>>>>> Stashed changes
     )
 }
 
